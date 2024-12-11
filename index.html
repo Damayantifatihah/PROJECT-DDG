@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Control</title>
+</head<body>
+    <div style="
+        border: 1px solid rgb(10, 10, 10);
+        background-color: darkcyan;
+        width:  fit-content;
+        margin-inline: auto;
+        padding-inline: 20px;
+        padding-block: 20px;
+        border-radius: 5%;
+        padding-inline: 50px;">
+        
+    <h1>Form Produk</h1>
+
+    <div style="
+    margin-bottom: 20px;">
+    <label>Kode Produk:</label>
+    <input type="text" id="Kode-Produk" readonly>
+    </div>
+
+
+    <div style="
+    margin-bottom: 20px;">
+    <label>Nama Produk:</label>
+    <input type="text" id="Nama-Produk">
+    </div>
+
+    
+    <div style="margin-bottom: 20px;">
+        <label for="">Harga Produk:</label>
+        <input type="number" id="Harga-Produk">
+    </div>
+
+    <div style="margin-bottom: 20px;">
+    <label>Satuan:</label>
+    <select name="" id="Satuan-Produk">
+        <option value="Pcs">Pcs</option>
+         <option value="Pack">Pack</option>
+    </select>
+    </div>
+    
+    <div style="margin-bottom: 20px;">
+        <label >Kategori:</label>
+        <select name="" id="Kategori-Produk">
+        <option value="Makanan Berat">Makanan Berat</option>
+        <option value="Makanan Ringan">Makanan Ringan</option>
+        <option value="Minuman">Minuman</option>
+        </select>
+    </div>
+
+
+    <div style="margin-bottom: 20px;">
+        <label for="">URL Gambar:</label>
+        <input type="text" id="URL-Produk">
+    </div>
+    
+    <div style="margin-bottom: 20px;">
+        <label for="">Stok Awal:</label>
+        <input type="number" id="Stok-awal">
+    </div>
+
+    <div>
+        <button style="
+            display: inline-block;
+            background-color: #fff;
+            border: none;
+            border-radius: 15px;
+
+            "id="tombol-submit"
+            onclick="menyimpanProduk()">Submit</button>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Table Produk -->
+    <table border="1 [x solod black]" style="border-collapse: collapse; margin-inline: auto; text-align: center;">
+        <thead>
+        <tr style="background-color: darkcyan;">
+            <th>Nomor</th>
+            <th>Kode Produk</th>
+            <th>Nama Produk</th>
+            <th>Harga Produk</th>
+            <th>Satuan</th>
+            <th>Kategori Produk</th>
+            <th>Gambar Produk</th>
+            <th>Stock Awal</th>
+            <th>Modify</th>
+        </tr>
+    </thead>
+        <tbody id="isi-data">
+            <tr>
+            <td>1</td>
+            <td>001</td>
+            <td>Coca cola</td>
+            <td>8000</td>
+            <td>Pcs</td>
+            <td>Minuman</td>
+            <td>10</td>
+            <td>Edit | Delete</td>
+        </tr>
+        </tbody>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
